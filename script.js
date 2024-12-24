@@ -10,17 +10,22 @@ async function getMovies(url){
     showMovies(data.results)
 }
 
+function updatePage(){
+    getMovies(API_URL())
+    currentPage.innerHTML = page
+}
+
 function nextPage(){
     if (page >= 1){
         page += 1 ;
-        getMovies(API_URL())
+        updatePage()
     }
 }
 
 function prevPage(){
     if(page > 1){
         page -= 1;
-        getMovies(API_URL())
+        updatePage()
     }
 }
 
@@ -49,5 +54,4 @@ function showMovies (movies){
     });
 }
 
-getMovies(API_URL())
-currentPage.innerHTML = page
+updatePage()
