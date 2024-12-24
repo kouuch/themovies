@@ -11,12 +11,16 @@ async function getMovies(url){
 }
 
 function nextPage(){
-
+    page += 1 ;
 }
 
 function prevPage(){
-    
+    page -= 1;
 }
+
+next.addEventListener("click",()=>{
+    alert("next page")
+})
 
 function showMovies (movies){
     moviesEl.innerHTML = ''
