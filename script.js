@@ -6,11 +6,18 @@ const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&
 async function getMovies(url){
     const respon = await fetch (url)
     const data = await respon.json()
-    showMovies(data.results)
+    showMovies(data.results)//showMovies di tangkap -> function showMovies
 }
 
 function showMovies (movies){
-    console.log("from data movies:", movies)
+    //document.getElementById("movies")
+    moviesEl.innerHTML = ''
+    //console.log("from data movies:", movies) //tresing
+    movies.forEach(movie => {
+        //console.log(movie.title) //proses mapping
+        const {title, poster_path, overview}= movie //data tertampung
+        console.log(title, poster_path, overview)
+    });
 }
 
 getMovies(API_URL)

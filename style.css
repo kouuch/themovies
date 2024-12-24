@@ -24,7 +24,7 @@ header{
     -o-border-radius: 6px;
 }
 
-#movies {
+#moviesEl {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 15px;
