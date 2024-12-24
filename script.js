@@ -20,7 +20,7 @@ function showMovies (movies){
         <img src="${API_IMG_URL + poster_path}" alt="the movie images"/>
         <div class= "detail">
             <h3>${title}</h3>
-            <p>${overview}</p>
+            <p>${overview.substring(0, 100)}</p>
         </div>
         `
         moviesEl.appendChild(moviesCard)
