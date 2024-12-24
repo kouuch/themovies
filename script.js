@@ -10,6 +10,14 @@ async function getMovies(url){
     showMovies(data.results)
 }
 
+function nextPage(){
+
+}
+
+function prevPage(){
+    
+}
+
 function showMovies (movies){
     moviesEl.innerHTML = ''
     movies.forEach(movie => {
@@ -20,7 +28,7 @@ function showMovies (movies){
         <img src="${API_IMG_URL + poster_path}" alt="the movie images"/>
         <div class= "detail">
             <h3>${title}</h3>
-            <p>${overview.substring(0, 100)}</p>
+            <p>${overview.substring(0, 100)}...</p>
         </div>
         `
         moviesEl.appendChild(moviesCard)
