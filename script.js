@@ -19,11 +19,11 @@ function prevPage(){
 }
 
 next.addEventListener("click",()=>{
-    alert("next page")
+    nextPage()
 })
 
 prev.addEventListener("click",()=>{
-    alert("prev page")
+    prevPage()
 })
 
 function showMovies (movies){
