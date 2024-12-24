@@ -11,13 +11,17 @@ async function getMovies(url){
 }
 
 function nextPage(){
-    page += 1 ;
-    getMovies(API_URL())
+    if (page >= 1){
+        page += 1 ;
+        getMovies(API_URL())
+    }
 }
 
 function prevPage(){
-    page -= 1;
-    getMovies(API_URL())
+    if(page > 1){
+        page -= 1;
+        getMovies(API_URL())
+    }
 }
 
 next.addEventListener("click",()=>{
