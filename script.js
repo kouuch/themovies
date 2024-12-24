@@ -51,7 +51,16 @@ function showMovies (movies){
         </div>
         `
         moviesEl.appendChild(moviesCard)
-    });
+    })
 }
+
+searchFrom.addEventListener("submit", (event)=>{
+    event.preventDefault()
+    const searchQuery = search.value
+
+    if(searchQuery !== ''){
+        getMovies(API_SEARCH_URL + searchQuery)
+    }
+})
 
 updatePage()
