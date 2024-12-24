@@ -30,3 +30,9 @@ header{
     padding: 15px;
     background-color: #EFF3EA;
 }
+
+.movie{
+    width: 100px;
+    height: 300px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0.2);
+}
