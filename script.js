@@ -18,7 +18,7 @@ function showMovies (movies){
         moviesCard.classList.add("movie") //-> <div id="movie"></div>
         moviesCard.innerHTML = `
         <img src="${API_IMG_URL + poster_path}" alt="the movie images"/>
-        <div class= "detailc">
+        <div class= "detail">
             <h3>${title}</h3>
             <p>${overview}</p>
         </div>
