@@ -1,7 +1,7 @@
 const API_KEY = "33302caa4b9d1494b26ae2686ee8dd30"
 
 let page = 1;
-const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&page=${page}`
+const API_URL = () =>`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&page=${page}`
 const API_IMG_URL  = "https://image.tmdb.org/t/p/w1280"
 
 async function getMovies(url){
@@ -12,6 +12,7 @@ async function getMovies(url){
 
 function nextPage(){
     page += 1 ;
+    console.log(API_URL)
 }
 
 function prevPage(){
