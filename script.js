@@ -12,11 +12,12 @@ async function getMovies(url){
 
 function nextPage(){
     page += 1 ;
-    console.log(API_URL())
+    getMovies(API_URL())
 }
 
 function prevPage(){
     page -= 1;
+    getMovies(API_URL())
 }
 
 next.addEventListener("click",()=>{
