@@ -15,8 +15,9 @@ function showMovies (movies){
     movies.forEach(movie => {
         const {title, poster_path, overview}= movie //data tertampung
         const moviesCard = document.createElement("div")
+        moviesCard.classList.add("movie") //-> <div id="movie"></div>
         moviesCard.innerHTML = `
-        <img src="${poster_path}">
+        <img src="${API_IMG_URL + poster_path}" alt="the movie images"/>
         <p>${title}</p>`
         moviesEl.appendChild(moviesCard)
     });
