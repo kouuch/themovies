@@ -1,5 +1,6 @@
 *, 
 html{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,6 +37,7 @@ header{
 }
 
 .movie{
+    cursor: pointer;
     width: 100%;
     height: auto;
     box-shadow: 0 4px 5px rgba(0, 0, 0.2);
@@ -58,12 +60,12 @@ header{
 }
 
 .movie img:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
     transition: transform 0.3s ease;
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    -o-transform: scale(1.01);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
 }
 
 .pagination{
