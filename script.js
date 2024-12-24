@@ -12,7 +12,7 @@ async function getMovies(url){
 
 function nextPage(){
     page += 1 ;
-    console.log(API_URL)
+    console.log(API_URL())
 }
 
 function prevPage(){
@@ -44,4 +44,4 @@ function showMovies (movies){
     });
 }
 
-getMovies(API_URL)
+getMovies(API_URL())
