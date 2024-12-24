@@ -12,7 +12,6 @@ async function getMovies(url){
 function showMovies (movies){
     //document.getElementById("movies")
     moviesEl.innerHTML = ''
-    //console.log("from data movies:", movies) //tresing
     movies.forEach(movie => {
         //console.log(movie.title) //proses mapping
         const {title, poster_path, overview}= movie //data tertampung
