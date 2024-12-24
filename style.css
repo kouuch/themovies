@@ -11,3 +11,14 @@ header{
     justify-content: space-between;
     padding: 15px;
 }
+
+.searchInput{
+    background-color: transparent;
+    padding: 7px 14px;
+    border: 1px solid black;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
