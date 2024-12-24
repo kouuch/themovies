@@ -16,7 +16,10 @@ function showMovies (movies){
     movies.forEach(movie => {
         //console.log(movie.title) //proses mapping
         const {title, poster_path, overview}= movie //data tertampung
-        console.log(title, poster_path, overview)
+        //console.log(title, poster_path, overview)
+        const moviesCard = document.createElement("div")
+        moviesCard.innerHTML = `<p>${title}</p>`
+        moviesEl.appendChild(moviesCard)
     });
 }
 
