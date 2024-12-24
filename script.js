@@ -60,6 +60,7 @@ searchFrom.addEventListener("submit", (event)=>{
 
     if(searchQuery !== ''){
         getMovies(API_SEARCH_URL + searchQuery)
+        search.value = ''
     }
 })
 
