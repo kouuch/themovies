@@ -50,3 +50,4 @@ function showMovies (movies){
 }
 
 getMovies(API_URL())
+currentPage.innerHTML = page
