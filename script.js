@@ -6,7 +6,11 @@ const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&
 async function getMovies(url){
     const respon = await fetch (url)
     const data = await respon.json()
-    console.log(data.results)
+    showMovies(data.results)
+}
+
+function showMovies (movies){
+    console.log("from data movies:", movies)
 }
 
 getMovies(API_URL)
