@@ -67,5 +67,5 @@ searchFrom.addEventListener("submit", (event)=>{
 updatePage()
 
 title.addEventListener("click", () =>{
-    location.reload
+    location.reload()
 })
