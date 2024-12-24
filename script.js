@@ -54,7 +54,7 @@ function showMovies (movies){
     })
 }
 
-searchFrom.addEventListener("submit", (event)=>{
+searchForm.addEventListener("submit", (event)=>{
     event.preventDefault()
     const searchQuery = search.value
 
