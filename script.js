@@ -22,6 +22,10 @@ next.addEventListener("click",()=>{
     alert("next page")
 })
 
+prev.addEventListener("click",()=>{
+    alert("prev page")
+})
+
 function showMovies (movies){
     moviesEl.innerHTML = ''
     movies.forEach(movie => {
