@@ -8,3 +8,5 @@ async function getMovies(url){
     const data = await respon.json()
     console.log(data.results)
 }
+
+getMovies(API_URL)
