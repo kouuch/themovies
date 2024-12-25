@@ -8,6 +8,7 @@ async function getMovies(url){
     const respon = await fetch (url)
     const data = await respon.json()
     showMovies(data.results)
+    // console.log(data)
 }
 
 function updatePage(){
